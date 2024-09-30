@@ -1,0 +1,53 @@
+/* src/components/FileUpload.css */
+.upload-card {
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.drop-zone {
+  border: 2px dashed #007bff;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drop-zone:hover {
+  background-color: #f8f9fa;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.file-icon {
+  margin-right: 0.5rem;
+  color: #6c757d;
+}
+
+.remove-file {
+  margin-left: auto;
+  color: #dc3545;
+}
+
+.upload-button {
+  width: 100%;
+  margin-top: 1rem;
+}

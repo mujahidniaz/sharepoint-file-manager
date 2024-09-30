@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(120deg, #93adbe, #e0b7f2);
+  background-attachment: fixed;
+  height: 100vh;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+/* src/components/FileList.css */
+.table-responsive {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f3f5;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

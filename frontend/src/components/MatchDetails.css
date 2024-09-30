@@ -1,0 +1,138 @@
+/* src/components/MatchDetails.css */
+.match-card {
+  transition: all 0.3s ease;
+  border-left: 5px solid #17a2b8;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.match-badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.7em;
+}
+
+.match-count {
+  font-size: 0.9rem;
+  padding: 0.5em 0.7em;
+}
+
+.match-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.breadcrumb-item {
+  cursor: pointer;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+/* Skills Section */
+.skills {
+  padding: 60px 0;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #3b434a;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #e6e8eb;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #ffb727;
+}
+
+.tech-skills-title {
+  font-weight: 600;
+  color: #3b434a;
+  margin-bottom: 20px;
+}
+
+.tech-skills .badge {
+  display: inline-block;
+  padding: 0.5em 1em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: #ffb727;
+  margin: 0.2em;
+  transition: all 0.3s ease;
+}
+
+.tech-skills .badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation to progress bars */
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.skills .progress-bar {
+  animation: progress-bar-stripes 1s linear infinite;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.15) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 1rem 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills .progress .skill {
+    font-size: 0.9em;
+  }
+
+  .tech-skills .badge {
+    font-size: 0.7em;
+  }
+}

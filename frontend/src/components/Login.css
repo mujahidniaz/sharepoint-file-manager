@@ -1,0 +1,22 @@
+/* src/components/Login.css */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h2 {
+  color: #0078d4; /* SharePoint blue color */
+}
+
+.btn-primary {
+  background-color: #0078d4;
+  border-color: #0078d4;
+}
+
+.btn-primary:hover {
+  background-color: #106ebe;
+  border-color: #106ebe;
+}

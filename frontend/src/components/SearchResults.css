@@ -1,0 +1,32 @@
+/* src/components/SearchResults.css */
+.search-result-card {
+  transition: all 0.3s ease;
+  border-left: 5px solid #007bff;
+}
+
+.search-result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb-item {
+  cursor: pointer;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+h2 {
+  color: #343a40;
+}
+
+.badge {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  .search-result-card .row > div {
+    margin-bottom: 0.5rem;
+  }
+}
